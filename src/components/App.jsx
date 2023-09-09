@@ -1,6 +1,6 @@
 import {Component} from 'react';
-
-
+import css from './App.module.css'
+// import  App  from 'components/App';
 
   import { nanoid } from 'nanoid';
 import ContactForm from 'components/ContactForm/ContactForm';
@@ -66,7 +66,7 @@ class App extends Component {
     return (
 
       <div className='container'>
-  <h1>Phonebook</h1>
+  <h1 className={css.h1}>Phonebook</h1>
         <ContactForm createContacts={this.createContacts}/> 
        
 
@@ -87,6 +87,7 @@ class App extends Component {
 };
   
 export default App;
+
     
   
  

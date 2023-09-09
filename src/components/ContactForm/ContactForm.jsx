@@ -74,7 +74,7 @@ class ContactForm extends Component {
             
             <form className={css.form } onSubmit={this.handleSubmit}>
                 {/* <label htmlFor={nanoid()}> */}
-                <label >
+                <label className={css.label} >
                     Name
                     <input
                         type="text"
@@ -85,12 +85,13 @@ class ContactForm extends Component {
                         required
                         value={this.state.name}
                         onChange={this.handleInputChange}
+                        className={css.input}
                         // className={`form-control ${!this.state.isValid && 'is-invalid'}`}
                         // id={nanoid()}
                         // id={nanoid()}
                     />
                 </label >
-                <label >
+                <label className={css.label}>
                     {/* <label htmlFor={nanoid()}></label> */}
                     Number
                     <input
@@ -102,10 +103,10 @@ class ContactForm extends Component {
                         required
                         value={this.state.number}
                         onChange={this.handleInputChange}
-                        // id={nanoid()}
+                        className={css.input}
                     />
                 </label >
-                <button type="submit" onClick={this.handleAddContact}>
+                <button className={css.btnAdd} type="submit" onClick={this.handleAddContact}>
                     Add contact
                 </button>
             </form>
