@@ -1,0 +1,11 @@
+.form {
+    /* list-style-type: none; */
+    display: flex;
+    flex-direction: column;
+            padding-bottom: 40px;
+    
+            width: 500px;
+            font-size: 18px;
+            font-weight: 500;
+            border-color: black; 
+}
