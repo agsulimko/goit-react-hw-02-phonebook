@@ -70,7 +70,7 @@ class App extends Component {
         <ContactForm createContacts={this.createContacts}/> 
        
 
-  <h2>Contacts</h2>
+  <h2 className={css.h2}>Contacts</h2>
           <Filter handleFilter ={this.handleFilter} />     
         
         <ContactList contacts={this.state.contacts}

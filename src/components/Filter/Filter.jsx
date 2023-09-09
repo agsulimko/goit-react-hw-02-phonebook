@@ -1,14 +1,14 @@
 
-
+import css from './Filter.module.css'
 const Filter = ({ handleFilter ,filter}) => {
   
     
     return (
-        <div className=''>
-            <label className='form-label'>
+        <div className={css.labelDiv}>
+            <label className={css.label}>
                 Find contacts by name
             </label>
-            <input
+            <input className={css.input}
                  
                  type='text'
                  value={filter}
